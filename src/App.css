@@ -1,0 +1,131 @@
+/* BODY */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* INPUT */
+.inputBox {
+  max-width: 500px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputBox input {
+  background: #1e293b;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.inputBox button {
+  background: #38bdf8;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inputBox button:hover {
+  background: #0ea5e9;
+}
+
+/* COLONNES */
+.columns {
+  display: flex;          /* aligne les colonnes horizontalement */
+  gap: 20px;              /* espace entre les colonnes */
+}
+
+/* COLONNE */
+.column {
+  flex: 1;                /* chaque colonne prend la même largeur */
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITRE DE COLONNE */
+.column h4 {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #38bdf8; /* ligne sous le titre */
+  padding-bottom: 5px;
+  color: #38bdf8;
+}
+
+/* CARTES */
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  backdrop-filter: blur(6px);
+  transition: 0.3s, box-shadow 0.3s;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+/* CARTES SELON STATUT */
+.column.todo .card {
+  background: rgba(56, 189, 248, 0.2);
+  color: #ffffff;
+  font-weight: bold;
+  border-left: 4px solid #38bdf8;
+}
+
+.column.in-progress .card {
+  background: rgba(250, 204, 21, 0.2);
+  color: #facc15;
+  border-left: 4px solid #facc15;
+}
+
+.column.done .card {
+  background: rgba(34,197,94, 0.2);
+  color: #22c55e;
+  text-decoration: line-through;
+  border-left: 4px solid #22c55e;
+}
+
+/* BOUTONS D'ACTIONS */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.actions button {
+  background: transparent;
+  border: none;
+  color:white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.actions button:hover {
+  color: #38bdf8;
+}
+
+/* SÉPARATION CLAIRE ENTRE LES COLONNES */
+.columns .column:not(:last-child) {
+  border-right: 2px solid rgba(255,255,255,0.2);
+  padding-right: 20px; /* espace interne après la bordure */
+}
+
+
