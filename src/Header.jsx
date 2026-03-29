@@ -20,7 +20,7 @@ function Header(props) {
       <Container>
         {/* Logo */}
         <Navbar.Brand as={NavLink} to="/">
-          📝 To-Do List
+          📝 To-Do List App
         </Navbar.Brand>
 
         <Navbar.Toggle />
